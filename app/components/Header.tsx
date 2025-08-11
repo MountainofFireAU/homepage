@@ -124,7 +124,7 @@ const Header = () => {
                   About Us
                   {activeDropdown === 'about' ? <FaChevronUp /> : <FaChevronDown />}
                 </button>
-                <div className={`dropdown-content overflow-hidden transition-all duration-300 ease-in-out ${activeDropdown === 'about' ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className={`dropdown-content ${activeDropdown === 'about' ? 'open' : ''}`}>
                   <div className="pl-4 space-y-1 mt-1">
                     <Link 
                       href="/about/meet-the-go" 
