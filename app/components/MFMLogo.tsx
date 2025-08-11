@@ -1,4 +1,5 @@
 import React from 'react'
+import { withBasePath } from '../lib/basePath'
 
 interface MFMLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl'
@@ -27,12 +28,6 @@ const MFMLogo: React.FC<MFMLogoProps> = ({
     xl: 'text-2xl'
   }
 
-  const logoColors = {
-    default: 'bg-white text-mfm-primary border-mfm-primary',
-    white: 'bg-mfm-primary text-white border-white',
-    dark: 'bg-mfm-dark text-white border-mfm-secondary'
-  }
-
   const textColors = {
     default: 'text-mfm-primary',
     white: 'text-white',
@@ -41,27 +36,20 @@ const MFMLogo: React.FC<MFMLogoProps> = ({
 
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
-      {/* Logo Image */}
-      <div className={`
-        ${sizeClasses[size]} 
-        flex items-center justify-center 
-        relative
-        overflow-hidden
-      `}>
+      <div className={`${sizeClasses[size]} relative`}> 
         <img 
-          src="/images/icons/mfm-logo.png" 
+          src={withBasePath('/images/icons/mfm-logo.png')}
           alt="MFM Logo" 
           className="w-full h-full object-contain"
         />
       </div>
 
-      {/* Text */}
       {showText && (
         <div className={`${textColors[variant]}`}>
           <h1 className={`${textSizeClasses[size]} font-bold leading-tight`}>
             MFM Australia
           </h1>
-          <p className={`text-xs ${variant === 'white' ? 'text-mfm-secondary' : 'text-mfm-secondary'} leading-tight`}>
+          <p className="text-xs text-mfm-secondary leading-tight">
             Mountain of Fire & Miracles
           </p>
         </div>
@@ -70,4 +58,4 @@ const MFMLogo: React.FC<MFMLogoProps> = ({
   )
 }
 
-export default MFMLogo 
+export default MFMLogo

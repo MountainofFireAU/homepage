@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaFire, FaPray, FaHeart, FaUsers, FaGlobe, FaBook } from 'react-icons/fa'
+import { withBasePath } from '../lib/basePath'
 
 export default function About() {
   return (
@@ -98,7 +99,7 @@ export default function About() {
             <div className="card text-center">
               <div className="relative w-full h-80 mb-6 bg-gray-100 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/leadership/dr-olukoya.jpg"
+                  src={withBasePath('/images/leadership/dr-olukoya.jpg')}
                   alt="Dr D.K. Olukoya - General Overseer"
                   fill
                   className="object-contain rounded-lg"
@@ -119,7 +120,7 @@ export default function About() {
             <div className="card text-center">
               <div className="relative w-full h-80 mb-6 bg-gray-100 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/leadership/pastor-folashade.jpg"
+                  src={withBasePath('/images/leadership/pastor-folashade.jpg')}
                   alt="Pastor Folashade Olukoya - Assistant General Overseer"
                   fill
                   className="object-contain rounded-lg"

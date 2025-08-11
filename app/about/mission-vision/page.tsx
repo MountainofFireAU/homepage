@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaArrowLeft } from 'react-icons/fa'
+import { withBasePath } from '../../lib/basePath'
 
 export default function MissionVision() {
   const objectives = [
@@ -24,8 +25,8 @@ export default function MissionVision() {
       <section className="relative bg-mfm-primary text-white py-20">
         <div className="absolute inset-0">
           <Image
-            src="/images/backgrounds/mfm-bg.jpg"
-            alt="MFM Background"
+            src={withBasePath('/images/backgrounds/mfm-bg.jpg')}
+            alt="Background"
             fill
             className="object-cover"
             priority

@@ -3,19 +3,21 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FaChevronLeft, FaChevronRight, FaCircle } from 'react-icons/fa'
+import { withBasePath } from '../lib/basePath'
 
 const images = [
-  '/mfmauimage/PHOTO-2025-07-11-16-49-42.jpg',
-  '/mfmauimage/9a14ddd8-ea42-48ea-927f-3c4576d3b9f3.JPG',
-  '/mfmauimage/68cf166d-8ea7-4750-a88b-cdcd6afab2ff.JPG',
-  '/mfmauimage/05ba6d63-e9d8-4bc8-8fa4-fcba8defcbd3.JPG',
-  '/mfmauimage/D33D6E71-66CA-475A-ABED-E80006559913.jpeg',
-  '/mfmauimage/D610FBC2-6018-4E2A-9DC1-AA1D76DD1F5B.jpeg',
-  '/mfmauimage/995EA251-9C33-4064-B63C-290FFA909DE9.jpeg',
-  '/mfmauimage/2C131D33-E8F0-4E40-BA88-FC99972CB222.jpeg',
-  '/mfmauimage/402C5CEE-36C0-46F7-873A-34411BCB7095.jpeg',
-  '/mfmauimage/IMG_2605.jpg',
-  '/mfmauimage/IMG_2602.jpg'
+  withBasePath('/mfmauimage/PHOTO-2025-07-11-16-49-42.jpg'),
+  withBasePath('/mfmauimage/9a14ddd8-ea42-48ea-927f-3c4576d3b9f3.JPG'),
+  withBasePath('/mfmauimage/68cf166d-8ea7-4750-a88b-cdcd6afab2ff.JPG'),
+  withBasePath('/mfmauimage/05ba6d63-e9d8-4bc8-8fa4-fcba8defcbd3.JPG'),
+  withBasePath('/mfmauimage/IMG_2605.jpg'),
+  withBasePath('/mfmauimage/IMG_2602.jpg'),
+  withBasePath('/mfmauimage/D33D6E71-66CA-475A-ABED-E80006559913.jpeg'),
+  withBasePath('/mfmauimage/D610FBC2-6018-4E2A-9DC1-AA1D76DD1F5B.jpeg'),
+  withBasePath('/mfmauimage/995EA251-9C33-4064-B63C-290FFA909DE9.jpeg'),
+  withBasePath('/mfmauimage/2C131D33-E8F0-4E40-BA88-FC99972CB222.jpeg'),
+  withBasePath('/mfmauimage/20250511_015115168_iOS.jpg'),
+  withBasePath('/mfmauimage/402C5CEE-36C0-46F7-873A-34411BCB7095.jpeg')
 ]
 
 export default function ImageSlideshow() {

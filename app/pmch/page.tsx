@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaArrowLeft, FaDownload, FaFilePdf, FaCalendarAlt, FaPray } from 'react-icons/fa'
+import { withBasePath } from '../lib/basePath'
 
 export default function PMCH() {
   const [activeTab, setActiveTab] = useState('august')
@@ -32,8 +33,8 @@ export default function PMCH() {
       <section className="relative bg-mfm-primary text-white py-20">
         <div className="absolute inset-0">
           <Image
-            src="/images/backgrounds/mfm-bg.jpg"
-            alt="MFM Background"
+            src={withBasePath('/images/backgrounds/mfm-bg.jpg')}
+            alt="Background"
             fill
             className="object-cover"
             priority

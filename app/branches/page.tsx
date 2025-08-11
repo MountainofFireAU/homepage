@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaFire, FaPray, FaHeart, FaUsers, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPlay, FaArrowRight, FaGlobe, FaBook, FaWater, FaCrown, FaShieldAlt } from 'react-icons/fa'
 import ImageSlideshow from '../components/ImageSlideshow'
+import { withBasePath } from '../lib/basePath'
 
 export default function Branches() {
   return (
@@ -11,8 +12,8 @@ export default function Branches() {
       <section className="relative bg-gradient-to-r from-mfm-dark via-mfm-primary to-mfm-dark text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="/images/backgrounds/mfm-bg.jpg"
-            alt="MFM Church Service Background"
+            src={withBasePath('/images/backgrounds/mfm-bg.jpg')}
+            alt="Background"
             fill
             className="object-cover"
             sizes="100vw"
