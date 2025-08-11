@@ -104,7 +104,7 @@ export default function MeetTheGO() {
                 <div className="lg:col-span-1">
                   <div className="relative w-full h-96 lg:h-[500px] bg-gray-100 rounded-lg overflow-hidden">
                     <Image
-                      src={daddyGO.image}
+                      src={withBasePath(daddyGO.image)}
                       alt={daddyGO.name}
                       fill
                       className="object-contain rounded-lg"
@@ -148,7 +148,7 @@ export default function MeetTheGO() {
                 <div className="lg:col-span-1">
                   <div className="relative w-full h-96 lg:h-[500px] bg-gray-100 rounded-lg overflow-hidden">
                     <Image
-                      src={mummyGO.image}
+                      src={withBasePath(mummyGO.image)}
                       alt={mummyGO.name}
                       fill
                       className="object-contain rounded-lg"

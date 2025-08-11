@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { withBasePath } from '../lib/basePath'
 
 interface ImageGalleryProps {
   category: 'leadership' | 'ministries' | 'events' | 'backgrounds'
@@ -62,7 +63,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ category, className = '' })
         <div key={index} className="card overflow-hidden">
           <div className="relative h-48 bg-mfm-gray">
             <Image
-              src={image.src}
+              src={withBasePath(image.src)}
               alt={image.alt}
               fill
               className="object-cover"

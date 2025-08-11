@@ -101,7 +101,7 @@ export default function PMCH() {
                   </div>
                 </div>
                 <a 
-                  href={currentMonth.prayerPoints.file}
+                  href={withBasePath(currentMonth.prayerPoints.file)}
                   download
                   className="btn-primary inline-flex items-center gap-2 w-full justify-center"
                 >
@@ -125,7 +125,7 @@ export default function PMCH() {
                   </div>
                 </div>
                 <a 
-                  href={currentMonth.program.file}
+                  href={withBasePath(currentMonth.program.file)}
                   download
                   className="btn-primary inline-flex items-center gap-2 w-full justify-center"
                 >
