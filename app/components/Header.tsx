@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import MFMLogo from './MFMLogo'
 
@@ -9,6 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
+  const pathname = usePathname()
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -27,7 +29,7 @@ const Header = () => {
   useEffect(() => {
     setIsMenuOpen(false)
     setActiveDropdown(null)
-  }, [])
+  }, [pathname])
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
