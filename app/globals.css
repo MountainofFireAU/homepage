@@ -53,48 +53,11 @@ body.menu-open {
 
 /* Mobile navigation improvements */
 @media (max-width: 1023px) {
-  /* Ensure mobile menu is properly positioned and closes */
-  .mobile-menu {
-    position: fixed;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 40;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .mobile-menu.open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  
   /* Improve touch targets */
   .nav-link {
     min-height: 44px;
     display: flex;
     align-items: center;
-  }
-  
-  /* Better dropdown animations */
-  .dropdown-content {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-  }
-  
-  .dropdown-content.open {
-    max-height: 200px;
-    opacity: 1;
-  }
-  
-  /* Ensure menu closes when navigating */
-  .mobile-menu:not(.open) {
-    pointer-events: none;
   }
 }
 

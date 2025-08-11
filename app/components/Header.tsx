@@ -101,98 +101,100 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div 
-          ref={menuRef} 
-          className={`lg:hidden mobile-menu bg-mfm-dark shadow-lg ${isMenuOpen ? 'open' : ''}`}
-        >
-          <nav className="py-4 px-4">
-            <div className="flex flex-col space-y-1">
-              <Link 
-                href="/" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                Home
-              </Link>
-              
-              {/* About Us Dropdown */}
-              <div className="relative">
-                <button
-                  onClick={() => toggleDropdown('about')}
-                  className="w-full text-left nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors flex items-center justify-between"
+        {isMenuOpen && (
+          <div 
+            ref={menuRef} 
+            className="lg:hidden absolute top-full left-0 right-0 bg-mfm-dark shadow-lg z-40"
+          >
+            <nav className="py-4 px-4">
+              <div className="flex flex-col space-y-1">
+                <Link 
+                  href="/" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
                 >
-                  About Us
-                  {activeDropdown === 'about' ? <FaChevronUp /> : <FaChevronDown />}
-                </button>
-                <div className={`dropdown-content ${activeDropdown === 'about' ? 'open' : ''}`}>
-                  <div className="pl-4 space-y-1 mt-1">
-                    <Link 
-                      href="/about/meet-the-go" 
-                      className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
-                      onClick={handleLinkClick}
-                    >
-                      Meet the GO
-                    </Link>
-                    <Link 
-                      href="/about/mission-vision" 
-                      className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
-                      onClick={handleLinkClick}
-                    >
-                      Mission & Vision
-                    </Link>
-                    <Link 
-                      href="/about/beliefs" 
-                      className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
-                      onClick={handleLinkClick}
-                    >
-                      Statement of Belief
-                    </Link>
-                  </div>
+                  Home
+                </Link>
+                
+                {/* About Us Dropdown */}
+                <div className="relative">
+                  <button
+                    onClick={() => toggleDropdown('about')}
+                    className="w-full text-left nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors flex items-center justify-between"
+                  >
+                    About Us
+                    {activeDropdown === 'about' ? <FaChevronUp /> : <FaChevronDown />}
+                  </button>
+                  {activeDropdown === 'about' && (
+                    <div className="pl-4 space-y-1 mt-1 border-l-2 border-mfm-secondary ml-4">
+                      <Link 
+                        href="/about/meet-the-go" 
+                        className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
+                        onClick={handleLinkClick}
+                      >
+                        Meet the GO
+                      </Link>
+                      <Link 
+                        href="/about/mission-vision" 
+                        className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
+                        onClick={handleLinkClick}
+                      >
+                        Mission & Vision
+                      </Link>
+                      <Link 
+                        href="/about/beliefs" 
+                        className="block py-2 px-4 text-mfm-secondary hover:text-white hover:bg-mfm-primary/20 rounded-md transition-colors"
+                        onClick={handleLinkClick}
+                      >
+                        Statement of Belief
+                      </Link>
+                    </div>
+                  )}
                 </div>
-              </div>
 
-              <Link 
-                href="/pmch" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                PMCH
-              </Link>
-              
-              <Link 
-                href="/branches" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                MFM Branches - AU
-              </Link>
-              
-              <Link 
-                href="/resources" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                Resources
-              </Link>
-              
-              <Link 
-                href="/donate" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                Donate
-              </Link>
-              
-              <Link 
-                href="/contact" 
-                className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
-                onClick={handleLinkClick}
-              >
-                Contact Us
-              </Link>
-            </div>
-          </nav>
-        </div>
+                <Link 
+                  href="/pmch" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  PMCH
+                </Link>
+                
+                <Link 
+                  href="/branches" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  MFM Branches - AU
+                </Link>
+                
+                <Link 
+                  href="/resources" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Resources
+                </Link>
+                
+                <Link 
+                  href="/donate" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Donate
+                </Link>
+                
+                <Link 
+                  href="/contact" 
+                  className="nav-link block py-3 px-4 rounded-md hover:bg-mfm-primary/20 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   )
