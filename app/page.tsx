@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaFire, FaPray, FaHeart, FaUsers, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPlay, FaArrowRight, FaGlobe } from 'react-icons/fa'
 import ImageSlideshow from './components/ImageSlideshow'
+import { withBasePath } from './lib/basePath'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-r from-mfm-dark via-mfm-primary to-mfm-dark text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="/images/backgrounds/mfm-bg.jpg"
+            src={withBasePath('/images/backgrounds/mfm-bg.jpg')}
             alt="MFM Church Service Background"
             fill
             className="object-cover"
@@ -64,8 +65,6 @@ export default function Home() {
           <cite className="text-lg text-mfm-primary font-medium">Obadiah 1:17</cite>
         </div>
       </section>
-
-
 
       {/* Image Slideshow */}
       <ImageSlideshow />
@@ -179,9 +178,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Image Slideshow */}
-      <ImageSlideshow />
 
     </div>
   )
