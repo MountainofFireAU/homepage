@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" className="w-full h-full">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D0000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2D0000;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fireGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FF6B6B;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- Mountain Ranges -->
+  <polygon points="0,800 400,300 800,500 1200,200 1600,400 1920,600 1920,1080 0,1080" fill="url(#mountainGradient)" opacity="0.7"/>
+  <polygon points="0,900 300,500 600,700 900,400 1200,600 1500,300 1920,500 1920,1080 0,1080" fill="url(#mountainGradient)" opacity="0.5"/>
+  
+  <!-- Fire Elements -->
+  <circle cx="960" cy="400" r="100" fill="url(#fireGradient)" opacity="0.4"/>
+  <circle cx="800" cy="500" r="60" fill="url(#fireGradient)" opacity="0.3"/>
+  <circle cx="1120" cy="450" r="80" fill="url(#fireGradient)" opacity="0.3"/>
+  
+  <!-- Abstract flame shapes -->
+  <path d="M960 300 Q980 280 960 260 Q940 280 960 300 Q970 320 960 340 Q950 320 960 300" fill="#FFD700" opacity="0.6"/>
+  <path d="M960 340 Q975 325 960 310 Q945 325 960 340 Q968 355 960 370 Q952 355 960 340" fill="#FF6B6B" opacity="0.5"/>
+  
+  <!-- Stars/Sparkles -->
+  <circle cx="200" cy="150" r="2" fill="#FFD700" opacity="0.8"/>
+  <circle cx="1600" cy="200" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="300" cy="100" r="1.5" fill="#FF6B6B" opacity="0.7"/>
+  <circle cx="1400" cy="120" r="1.5" fill="#FF6B6B" opacity="0.5"/>
+  
+  <!-- Subtle pattern overlay -->
+  <rect width="1920" height="1080" fill="url(#fireGradient)" opacity="0.1"/>
+</svg> 

@@ -1,0 +1,21 @@
+# Python dependencies for MFM Website development
+# Note: This is primarily a Node.js project, but Python tools can be used for:
+# - Image processing
+# - Build scripts
+# - Deployment automation
+
+# Image processing
+Pillow==10.0.0
+opencv-python==4.8.0.76
+
+# Web scraping (for downloading images)
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Development tools
+python-dotenv==1.0.0
+click==8.1.7
+
+# Deployment
+boto3==1.28.0
+awscli==1.29.0 
