@@ -38,7 +38,7 @@ const MFMLogo: React.FC<MFMLogoProps> = ({
     <div className={`flex items-center space-x-3 ${className}`}>
       <div className={`${sizeClasses[size]} relative`}> 
         <img 
-          src={withBasePath('/images/icons/mfm-logo.png')}
+          src={withBasePath('/images/icons/mfm-logo.jpg')}
           alt="MFM Logo" 
           className="w-full h-full object-contain"
         />
