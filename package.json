@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "predeploy": "rm -rf out && npm run export",
+    "deploy": "touch out/.nojekyll && echo 'MFM Australia' > out/CNAME || true"
   },
   "dependencies": {
     "next": "^14.0.0",
@@ -27,7 +30,14 @@
     "tailwindcss": "^3.3.5",
     "typescript": "^5.0.0"
   },
-  "keywords": ["church", "ministry", "mfm", "australia", "deliverance", "prayer"],
+  "keywords": [
+    "church",
+    "ministry",
+    "mfm",
+    "australia",
+    "deliverance",
+    "prayer"
+  ],
   "author": "MFM Australia",
   "license": "MIT"
 } 
