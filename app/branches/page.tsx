@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaFire, FaPray, FaHeart, FaUsers, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPlay, FaArrowRight, FaGlobe, FaBook, FaWater, FaCrown, FaShieldAlt } from 'react-icons/fa'
+import { FaFire, FaPray, FaHeart, FaUsers, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaPlay, FaArrowRight, FaGlobe, FaBook, FaWater, FaCrown, FaShieldAlt, FaPhone } from 'react-icons/fa'
 import ImageSlideshow from '../components/ImageSlideshow'
 import { withBasePath } from '../lib/basePath'
 
@@ -70,6 +70,10 @@ export default function Branches() {
                   <FaGlobe className="text-mfm-primary" />
                   <span><strong>Contact:</strong> mfmcanberra@gmail.com</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <FaPhone className="text-mfm-primary" />
+                  <span><strong>Phone:</strong> <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">420 251 989</a></span>
+                </div>
               </div>
             </div>
 
@@ -93,6 +97,10 @@ export default function Branches() {
                 <div className="flex items-center gap-3">
                   <FaGlobe className="text-mfm-primary" />
                   <span><strong>Contact:</strong> mfmsydney1@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <FaPhone className="text-mfm-primary" />
+                  <span><strong>Phone:</strong> <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">420 251 989</a></span>
                 </div>
               </div>
             </div>

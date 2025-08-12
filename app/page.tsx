@@ -60,7 +60,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <blockquote className="text-2xl md:text-3xl font-semibold text-mfm-dark mb-4">
             "But upon mount Zion shall be deliverance, and there shall be holiness;<br />
-            and YOU shall possess their possessions."
+            and YOU shall possess your possessions."
           </blockquote>
           <cite className="text-lg text-mfm-primary font-medium">Obadiah 1:17</cite>
         </div>

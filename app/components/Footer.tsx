@@ -53,6 +53,17 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-mfm-secondary">Contact</h4>
             <div className="space-y-3">
+              {/* Church Contact Number */}
+              <div className="flex items-start space-x-3">
+                <FaPhone className="text-mfm-secondary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300 text-sm">Church Contact</p>
+                  <a href="tel:420251989" className="text-mfm-secondary hover:text-white transition-colors text-sm font-semibold">
+                    420 251 989
+                  </a>
+                </div>
+              </div>
+
               {/* Canberra Location */}
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-mfm-secondary mt-1 flex-shrink-0" />

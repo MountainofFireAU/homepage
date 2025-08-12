@@ -106,6 +106,21 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-mfm-dark mb-8">Get In Touch</h2>
               
               <div className="space-y-6">
+                {/* Church Contact Number */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-mfm-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <FaPhone className="text-white text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-mfm-dark mb-1">Church Contact</h3>
+                    <p className="text-gray-700">
+                      <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors font-semibold">
+                        420 251 989
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
                 {/* Canberra Location */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-mfm-primary rounded-full flex items-center justify-center flex-shrink-0">
