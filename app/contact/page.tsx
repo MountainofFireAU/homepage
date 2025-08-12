@@ -114,8 +114,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-mfm-dark mb-1">Church Contact</h3>
                     <p className="text-gray-700">
-                      <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors font-semibold">
-                        420 251 989
+                      <a href="tel:+61420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors font-semibold">
+                        +61 420 251 989
                       </a>
                     </p>
                   </div>

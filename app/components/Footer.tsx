@@ -58,8 +58,8 @@ const Footer = () => {
                 <FaPhone className="text-mfm-secondary mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 text-sm">Church Contact</p>
-                  <a href="tel:420251989" className="text-mfm-secondary hover:text-white transition-colors text-sm font-semibold">
-                    420 251 989
+                  <a href="tel:+61420251989" className="text-mfm-secondary hover:text-white transition-colors text-sm font-semibold">
+                    +61 420 251 989
                   </a>
                 </div>
               </div>

@@ -72,7 +72,7 @@ export default function Branches() {
                 </div>
                 <div className="flex items-center gap-3">
                   <FaPhone className="text-mfm-primary" />
-                  <span><strong>Phone:</strong> <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">420 251 989</a></span>
+                  <span><strong>Phone:</strong> <a href="tel:+61420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">+61 420 251 989</a></span>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function Branches() {
                 </div>
                 <div className="flex items-center gap-3">
                   <FaPhone className="text-mfm-primary" />
-                  <span><strong>Phone:</strong> <a href="tel:420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">420 251 989</a></span>
+                  <span><strong>Phone:</strong> <a href="tel:+61420251989" className="text-mfm-primary hover:text-mfm-dark transition-colors">+61 420 251 989</a></span>
                 </div>
               </div>
             </div>
