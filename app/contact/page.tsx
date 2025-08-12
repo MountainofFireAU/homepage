@@ -167,7 +167,7 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-mfm-dark mb-1">Service Times</h3>
                     <div className="text-gray-700 space-y-1">
                       <p>Sunday Service: 10:00 AM (AEST)</p>
-                      <p>Manna Water: 11:00 PM (AEST)</p>
+                      <p>Manna Water: 9:00 PM (AEST)</p>
                       <p>PMCH: First Saturday of every month</p>
                     </div>
                   </div>

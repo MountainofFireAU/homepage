@@ -34,7 +34,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link href="/about/story" className="text-gray-300 hover:text-white transition-colors text-sm">Our Story</Link></li>
               <li><Link href="/about/beliefs" className="text-gray-300 hover:text-white transition-colors text-sm">Statement of Belief</Link></li>
-              <li><Link href="/about/meet-the-go" className="text-gray-300 hover:text-white transition-colors text-sm">Dr DK Olukoya</Link></li>
+              <li><Link href="/about/meet-the-go" className="text-gray-300 hover:text-white transition-colors text-sm">Dr D.K. Olukoya</Link></li>
               <li><Link href="/about/mission-vision" className="text-gray-300 hover:text-white transition-colors text-sm">Mission & Vision</Link></li>
               <li><Link href="/branches" className="text-gray-300 hover:text-white transition-colors text-sm">MFM Branches - AU</Link></li>
               <li><Link href="/about/jobs" className="text-gray-300 hover:text-white transition-colors text-sm">Jobs / Opportunities</Link></li>
@@ -94,7 +94,7 @@ const Footer = () => {
               <h5 className="text-mfm-secondary font-semibold mb-2">Service Times</h5>
               <div className="text-sm text-gray-300 space-y-1">
                 <p>Sunday Service: 10:00 AM (AEST)</p>
-                <p>Manna Water: 11:00 PM (AEST)</p>
+                <p>Manna Water: 9:00 PM (AEST)</p>
                 <p>PMCH: First Saturday of every month</p>
               </div>
             </div>

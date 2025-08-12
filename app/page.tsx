@@ -34,7 +34,7 @@ export default function Home() {
               If you are here, God brought you here."
             </p>
             <p className="text-lg mb-8 text-gray-200">
-              Dr D.K Olukoya, General Overseer MFM Worldwide
+              Dr D.K. Olukoya, General Overseer MFM Worldwide
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/resources" className="btn-primary inline-flex items-center gap-2">
